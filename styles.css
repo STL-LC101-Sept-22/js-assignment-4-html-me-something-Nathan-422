@@ -47,10 +47,77 @@ table {
 	border-spacing: 0;
 }
 
-header {
+/*  Author: Nathan Wright
+    Organization: Launchcode
+    Class: lc_101
+    Instructor: Carrie Jones
+    Section: Sep 2022 - Mar 2022
+*/
 
+header {
+    background-color: #404040;
+    
+    padding: 10px 40px 10px 40px;
+    margin-bottom: 45px;
+
+    color: white;
+    font-size: 36pt;
+    font-weight: bold;
+    font-family:sans-serif;
+}
+
+body {
+    margin: 8px;
+    background-color: #fcfcfc;
+}
+
+#mainHeading {
+    color: red;
+}
+
+h1 {
+    font-size: 36pt;
+    margin-bottom: 12pt;
+}
+
+h2 {
+    font-size: 24pt;
+    margin-bottom: 12pt;
+}
+
+p {
+    font-size: 10pt;
+    font-family: sans-serif;
+    margin-bottom: 6pt;
+}
+
+
+#centerColumnContent {
+    justify-content: center;
+    max-width: 800px;
+    margin:auto;
 }
 
 footer {
-    
+    background-color: darkblue;
+}
+
+.postEntry {
+    padding: 20px;
+    /* border: 10px; */
+    border-width: 1px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: lightgray;
+    background-color:white;
+    margin: 10px 0px;
+}
+
+.hikeName {
+    font-family:Rockwell, Baskerville, monospace;
+}
+
+.parkPicture {
+    width: 85%;
+    margin: 0 auto;
 }
