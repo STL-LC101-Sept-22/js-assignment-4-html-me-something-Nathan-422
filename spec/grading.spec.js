@@ -32,21 +32,12 @@ describe ("Grading Tests: ", function () {
    });
 
    it("HTML includes the correct number of certain elements", function() {
-      setTimeout(() => {
-         
-      
-      let pElements = container.body.getElementsByTagName("P").length;
-         console.log(pElements);
+         let pElements = container.body.getElementsByTagName("P").length;
          let headerElements = container.body.getElementsByTagName("Header").length;
-         console.log(headerElements);
          let footerElements = container.body.getElementsByTagName("Footer").length;
-         console.log(footerElements);
          let mainElements = container.body.getElementsByTagName("Main").length;
-         console.log(mainElements);
          let articleElements = container.body.getElementsByTagName("Article").length;
-         console.log(articleElements);
          let imageElements = container.body.getElementsByTagName("img").length;
-         console.log(imageElements);
 
          expect(pElements).toBeGreaterThanOrEqual(1);
          expect(headerElements).toBeGreaterThanOrEqual(1);
@@ -54,54 +45,37 @@ describe ("Grading Tests: ", function () {
          expect(mainElements).toBeGreaterThanOrEqual(1);
          expect(articleElements).toBeGreaterThanOrEqual(1);
          expect(imageElements).toBeGreaterThanOrEqual(1);
-      }, 1000);   
    })
 
    it("HTML contains correct number of sections", function() {
-      setTimeout(() => {
-         let childrenElements = container.body.children;
-         
-         expect(childrenElements.length).toBeGreaterThanOrEqual(3);
-         expect(childrenElements.length).toBeLessThanOrEqual(10);
-         
-               }, 1000)
+      let childrenElements = container.body.children;
+
+      expect(childrenElements.length).toBeGreaterThanOrEqual(3);
+      expect(childrenElements.length).toBeLessThanOrEqual(10);
    })
 
    it("HTML includes external CSS script", function() {
-      setTimeout(() => {
-         let linkElement = container.getElementsByTagName("Link");
-         expect(linkElement.item(0).href.includes('styles.css')).toBeTrue();
-         
-               }, 1000)
+      let linkElement = container.getElementsByTagName("Link");
+      expect(linkElement.item(0).href.includes('styles.css')).toBeTrue();
    })
 
    it("CSS body sets margin and display", function() {
-      setTimeout(() => {
-         expect(window.getComputedStyle(container.body).display).toEqual("block");
-         expect(window.getComputedStyle(container.body).margin).toEqual("8px");
-         
-               }, 1000)
+      expect(window.getComputedStyle(container.body).display).toEqual("block");
+      expect(window.getComputedStyle(container.body).margin).toEqual("8px");
    })
 
    it("CSS funParagraph class is green", function() {
-      setTimeout(() => {
-         let funParagraphElement = container.getElementById("testP");
-         expect(window.getComputedStyle(funParagraphElement).color).toEqual("green");
-         
-               }, 1000)
+      let funParagraphElement = container.getElementById("testP");
+      expect(window.getComputedStyle(funParagraphElement).color).toEqual("green");
    })
 
    it("CSS mainHeading id is red", function() {
-      setTimeout(() => {
-         let headingElement = container.getElementById("mainHeading");
-         expect(window.getComputedStyle(headingElement).color).toEqual("red");
-         
-               }, 1000)
+      let headingElement = container.getElementById("mainHeading");
+      expect(window.getComputedStyle(headingElement).color).toEqual("red");
    })
 
    it("HTML includes HTML entities", function() {
       // Regex pattern: /(&.+;)/ig
-      
       const regex = /(&.+;)/ig;
       expect(html.search(regex)).not.toEqual(-1);
    })
