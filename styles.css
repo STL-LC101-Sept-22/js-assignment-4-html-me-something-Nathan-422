@@ -1,1 +1,281 @@
-/* Write your CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*  Author: Nathan Wright
+    Organization: Launchcode
+    Class: lc_101
+    Instructor: Carrie Jones
+    Section: Sep 2022 - Mar 2022
+*/
+
+header {
+  background-color: rgb(78, 53, 39);
+
+  border-width: 6px;
+  border-radius: 5px;
+  border-style: dashed;
+  border-color: rgb(59, 38, 25);
+
+  padding: 10px 40px 10px 40px;
+  margin-bottom: 45px;
+
+  /* color: rgb(128, 165, 118); */
+  color: rgb(174, 179, 156);
+  font-size: 36pt;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+footer {
+  background-color: whitesmoke;
+
+  padding: 10px 40px 10px 40px;
+  margin-top: 45px;
+
+  color: black;
+  /* font-size: 36pt; */
+  /* font-weight: bold; */
+  /* font-family:sans-serif; */
+}
+
+body {
+  margin: 8px;
+  display: block;
+  background-color: #fcfcfc;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  color: darkgreen;
+}
+
+a:active {
+  color: darkolivegreen;
+}
+
+#mainHeading {
+  color: red;
+  font-size: 6pt;
+}
+
+#testP {
+  color: green;
+  font-size: 6pt;
+  /* opacity: 30%; */
+}
+
+h1 {
+  font-size: 36pt;
+  margin-bottom: 12pt;
+}
+
+h2 {
+  font-size: 24pt;
+  margin-bottom: 12pt;
+}
+
+p {
+  font-size: 11pt;
+  font-family: sans-serif;
+  margin-bottom: 6pt;
+
+  line-height: 13pt;
+}
+
+#centerColumnContent {
+  justify-content: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.postEntry {
+  padding: 40px 40px;
+  margin: 10px 0px;
+
+  border-width: 1px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: lightgray;
+
+  background-color: white;
+
+  box-shadow: 0px 0px 5px -3px lightgray;
+}
+
+.hikeName {
+  font-family: Rockwell, "Rockwell Nova", Rod, Cambria, serif;
+}
+
+#postTitle {
+  font-family: Rockwell, "Rockwell Nova", Rod, Cambria, serif;
+}
+
+.introParagraph {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.photoWrapper {
+  width: 100%;
+  margin: auto;
+}
+
+.parkPicture {
+  width: 100%;
+
+  margin: auto;
+  display: block;
+
+  /* padding-top: 8px;
+    padding-bottom: 8px; */
+
+  margin-top: 24px;
+  margin-bottom: 8px;
+
+  border-width: 1px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: lightgray;
+}
+
+.imgCaption {
+  color: dimgray;
+}
