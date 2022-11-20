@@ -55,15 +55,33 @@ table {
 */
 
 header {
-    background-color: whitesmoke;
+    background-color: rgb(78, 53, 39);
+
+    border-width: 6px;
+    border-radius: 5px;
+    border-style: dashed;
+    border-color: rgb(59, 38, 25);
     
     padding: 10px 40px 10px 40px;
     margin-bottom: 45px;
 
-    color: white;
+    /* color: rgb(128, 165, 118); */
+    color: rgb(174, 179, 156);
     font-size: 36pt;
     font-weight: bold;
     font-family:sans-serif;
+}
+
+footer {
+    background-color: whitesmoke;
+    
+    padding: 10px 40px 10px 40px;
+    margin-top: 45px;
+
+    color: black;
+    /* font-size: 36pt; */
+    /* font-weight: bold; */
+    /* font-family:sans-serif; */
 }
 
 body {
@@ -72,12 +90,36 @@ body {
     background-color: #fcfcfc;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:hover {
+    color: darkgreen;
+}
+
+a:active {
+    color: darkolivegreen;
+}
+
 #mainHeading {
     color: red;
+    font-size: 6pt;
 }
 
 #funParagraph {
+    /* visibility: hidden; */
     color: green;
+    font-size: 6pt;
+    /* opacity: 0%; */
 }
 
 h1 {
@@ -91,9 +133,11 @@ h2 {
 }
 
 p {
-    font-size: 10pt;
+    font-size: 11pt;
     font-family: sans-serif;
     margin-bottom: 6pt;
+
+    line-height: 13pt;
 }
 
 
@@ -103,26 +147,58 @@ p {
     margin:auto;
 }
 
-footer {
-    background-color: darkblue;
-}
+
 
 .postEntry {
-    padding: 20px;
-    /* border: 10px; */
+    padding: 40px 40px;
+    margin: 10px 0px;
+
     border-width: 1px;
     border-radius: 5px;
     border-style: solid;
     border-color: lightgray;
+
     background-color:white;
-    margin: 10px 0px;
+
+    box-shadow: 0px 0px 5px -3px lightgray;
 }
 
 .hikeName {
-    font-family:Rockwell, Baskerville, monospace;
+    font-family:Rockwell, "Rockwell Nova", Rod, Cambria, serif;
+}
+
+#postTitle {
+    font-family:Rockwell, "Rockwell Nova", Rod, Cambria, serif;
+}
+
+.introParagraph {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.photoWrapper {
+    width: 100%;
+    margin: auto;
 }
 
 .parkPicture {
-    width: 85%;
-    margin: 0 auto;
+    width: 100%;
+
+    margin: auto;
+    display: block;
+
+    /* padding-top: 8px;
+    padding-bottom: 8px; */
+
+    margin-top: 24px;
+    margin-bottom: 8px;
+
+    border-width: 1px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: lightgray;    
+}
+
+.imgCaption {
+    color: darkgrey;
 }
